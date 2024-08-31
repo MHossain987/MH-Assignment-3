@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DaisyUI 4.12.10 CSS file + Tailwind CSS CDN script -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind.config -->
+     <script>
+         tailwind.config = {
+           theme: {
+             extend: {
+               colors: {
+                 clifford: '#da373d',
+               }
+             }
+           }
+         }
+     </script>
+    <!-- font awesome cdn -->
+     <script src="https://kit.fontawesome.com/2c90d39f3b.js" crossorigin="anonymous"></script>
+    <!-- embedding fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <title>Rinterio</title>
+</head>
+<body class="font-manrope">
+    <header class="max-w-screen-2xl bg-gradient-to-r from-[rgba(255,255,255)]/[1] to-[rgba(255,255,255)]/[0] px-5 py-10 lg:px-32 lg:py-16 mx-auto overflow-hidden">
+        <!-- navbar -->
+        <div class="navbar justify-around">
+            <div class="navbar-start justify-between">
+              <div class="flex"><a class="btn btn-ghost text-xl p-0 border-none"><i class="fa-solid fa-arrow-right w-8 h-8 flex justify-center items-center border rounded-full bg-[#ABEF5F] text-sm -rotate-45"></i><span class="font-extrabold text-[32px]">Rinterio</span></a></div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a><span class="font-extrabold">Home</span></a></li>
+                  <li class="text-[#737373]"><a>Services</a></li>
+                  <li class="text-[#737373]"><a>Portfolio</a></li>
+                  <li class="text-[#737373]"><a>Blogs</a></li>
+                  <li class="text-[#737373]"><a>Contact Us</a></li>
+                  <li class="text-[#737373]"><a>Search</a></li>
+                  <li class="text-[#737373]"><a>Cart</a></li>
+                  <li class="text-[#737373]"><a>Book Consult</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                  <li><a><span class="font-extrabold">Home</span></a></li>
+                  <li class="text-[#737373]"><a>Services</a></li>
+                  <li class="text-[#737373]"><a>Portfolio</a></li>
+                  <li class="text-[#737373]"><a>Blogs</a></li>
+                  <li class="text-[#737373]"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+              <div>
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <a class="btn rounded-full bg-[#ABEF5F] font-extrabold">Book Consult<i class="fa-solid fa-arrow-right text-white w-8 h-8 flex justify-center items-center border rounded-full bg-[#1C1C1C] text-sm -rotate-45"></i></a>
+            </div>
+        </div>
+        <!-- banner -->
+         <div class="mx-auto">
+          <div class="flex justify-center items-center mt-9 mb-6"><img src="assets/banner.png" alt="A House"></div>
+          <div class="text-center">
+            <h2 class="font-extrabold text-2xl lg:text-6xl mb-6">A barn house of this design has a striking appearance</h2>
+            <p class="text-sm lg:text-lg text-[#494949] mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <a class="btn rounded-full bg-[rgba(171,239,95)]/[0.5] font-extrabold">View Details<i class="fa-solid fa-arrow-right text-black w-8 h-8 flex justify-center items-center border rounded-full bg-[#ABEF5F] text-sm -rotate-45"></i></a>
+          </div>
+         </div>
+    </header>
+</body>
+</html>
